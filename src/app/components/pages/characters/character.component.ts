@@ -28,8 +28,7 @@ import { Character } from '@app/shared/interfaces/character.interface';
             </div>
         </div>
     </div>`,
-    changeDetection:ChangeDetectionStrategy.OnPush,
-    styleUrls: ['./character.component.scss']
+    changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class CharacterComponent {
     @Input() character: Character;
