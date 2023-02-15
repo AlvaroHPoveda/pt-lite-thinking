@@ -1,0 +1,13 @@
+.cardCustom {
+    width: 18rem;
+    position: relative;
+}
+
+.cardSmall{
+    width: 3rem;
+    padding: 0 10px;
+    position: absolute;    
+    right: 0;
+    background-color: #343a40;
+    z-index: 1;
+}

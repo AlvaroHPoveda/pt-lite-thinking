@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="row mt-3">
+        <button class="col btn btn-primary" (click)="changePage(false)" [disabled]="pageNum === 1">Anterior</button>
+        <button class="col btn btn-primary" (click)="changePage(true)" [disabled]="pageNum === numPages">Siguiente</button>
+    </div>
+    <div class="col my-3" *ngFor="let character of characters">
+        <app-character [character]="character"></app-character>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound"
+    *ngIf="characters.length <= 0">
+        <p class="text-white">No results...</p>
+    </div>
+</div>
