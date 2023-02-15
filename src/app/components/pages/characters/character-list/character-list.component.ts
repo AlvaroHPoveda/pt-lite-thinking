@@ -1,6 +1,5 @@
-import { Component, HostListener, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, ParamMap, Router } from '@angular/router';
-import { DOCUMENT } from '@angular/common';
 import { take, filter } from 'rxjs/operators';
 
 import { Character } from '@app/shared/interfaces/character.interface';
